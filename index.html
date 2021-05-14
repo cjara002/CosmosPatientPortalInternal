@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Internal Patient Portal | Cosmos Health Solutions</title>
+</head>
+
+<body style="background-color: lightblue;">
+    <header class="fixedHeader" style="background-color: white;">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="col-3">
+                <a class="py-0 navbar-brand width-200px sm-width-180px xs-width-150px d-none d-md-block"
+                    href="/patients">
+                    <img src="./images/cosmos.png" alt="Cosmos Logo" style="max-width: 100%; height: auto;">
+                </a>
+                <a class="navbar-brand d-block d-md-none py-2" href="/patients">
+                    Cosmos Health Solutions
+                </a>
+            </div>
+            <div class="col-9">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style="flex-grow: 1;">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown show">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Carlos' Profile
+                            </a>
+                            <div class="dropdown-menu show" aria-labelledby="navbarDropdown">
+
+                                <a class="dropdown-item" href="/patients/edit">Personal Information</a>
+
+
+                                <a class="dropdown-item" href="/patients/security">Security</a>
+
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item"><a class="nav-link" rel="nofollow" data-method="post"
+                                href="/logout">Logout</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br />
+    <div class="container"  >
+
+        <div class="row">
+            <section class="col-6 ">
+                <div class="card shadow px-4 py-5">
+                    <h4>Demographics</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <h6>Patient:</h6>
+                            <p class="display-30 mb-2-0">Carlos Jara</p>
+                        </div>
+                        <div class="col-6">
+                            <h6>Date of Birth:</h6>
+                            <p class="mb-2-0">Jan 1, 1915</p>
+                        </div>
+                        <div class="col-6">
+                            <h6>Email:</h6>
+                            <p class="display-30 mb-2-0">cjjara002@gmail.com</p>
+                        </div>
+                        <div class="col-6">
+                            <h6>Phone:</h6>
+                            <p class="mb-2-0">323-495-0763</p>
+                        </div>
+                        <div class="col-12 d-flex align-items-center">
+                            <!-- <h6 class="mb-0">Profile: </h6> -->
+                            <a href="#" class="butn">
+                                <i class="far fa-user mr-1 align-middle display-28"  title="View more detials"></i> <span
+                                    class="alt-font align-middle d-none d-lg-inline-block">View More Details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-6 ">
+                <div class=" card shadow px-4 py-5">
+                    <h4>Accepted Consent Forms</h4>
+                    <!-- <div class="row"> -->
+                    <div class="overflow-auto">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col"> View</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>PCR Consent Form</td>
+                                    <td>Fri, Feb 26 2021 12:59pm</td>
+                                    <td style=" font-size: 18px">
+                                        <a href="#"><i class="fas fa-download fa-fw"
+                                                title="Download form (pdf)"></i></a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Antigen Consent Form</td>
+                                    <td>Fri, Feb 26 2021 12:59pm</td>
+                                    <td style=" font-size: 18px">
+                                        <a href="#"><i class="fas fa-download fa-fw"
+                                                title="Download form (pdf)"></i></a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>PCR Consent Form</td>
+                                    <td>Fri, Feb 26 2021 12:59pm</td>
+                                    <td style=" font-size: 18px">
+                                        <a href="#"><i class="fas fa-download fa-fw"
+                                                title="Download form (pdf)"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+        </div>
+        <br />
+        <section class="col">
+            <div class="card shadow px-4 py-5">
+                <h4>Test Result</h4>
+                <!-- <div class="row"> -->
+
+                <div class="overflow-auto">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Test Type</th>
+                                <th scope="col"> Result</th>
+                                <th scope="col"> Report</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Fri, Feb 26 2021 12:59pm</td>
+                                <td>Antigen</td>
+                                <td>Negative</td>
+                                <td style=" font-size: 18px">
+                                    <a target="_blank" class="mr-2" href="#"><i class="fas fa-external-link-alt fa-fw"
+                                            title="View test report"></i></a>
+                                    <a href="#"><i class="fas fa-download fa-fw"
+                                            title="Download test report (pdf)"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Fri, Feb 26 2021 12:59pm</td>
+                                <td>PCR</td>
+                                <td>Positive</td>
+                                <td style=" font-size: 18px">
+                                    <a target="_blank" class="mr-2" href="#"><i class="fas fa-external-link-alt fa-fw"
+                                            title="View test report"></i></a>
+                                    <a href="#"><i class="fas fa-download fa-fw"
+                                            title="Download test report (pdf)"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Fri, Feb 26 2021 12:59pm</td>
+                                <td>PCr Saliva</td>
+                                <td>Pending</td>
+                                <td style=" font-size: 18px">
+                                    <a target="_blank" class="mr-2" href="#"><i class="fas fa-external-link-alt fa-fw"
+                                            title="View test report"></i></a>
+                                    <a href="#"><i class="fas fa-download fa-fw"
+                                            title="Download test report (pdf)"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center">
+                        <!-- <h6 class="mb-0">Profile: </h6> -->
+                        <a href="#" class="butn">
+                            <i class="fas fa-external-link-alt mr-1 align-middle display-28" title="View All Reports"></i> <span
+                                class="alt-font align-middle d-none d-lg-inline-block">View All Reports</span>
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <!-- <h6 class="mb-0">Profile: </h6> -->
+                        <a href="#" class="butn">
+                            <i class="fas fa-download mr-1 align-middle display-28" title="Download All Reports"></i> <span
+                                class="alt-font align-middle d-none d-lg-inline-block">Download All Reports</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+    </div>
+    <br />
+
+    <div class="footer-bar xs-padding-15px-tb" style="float: left;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: #314554;
+        color: #fdfefe;">
+        <div class="col">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="media">
+                        <i class="far fa-clock header-icon text-primary"></i>
+                        <div class="media-body ml-3">
+                            <span class="font-weight-600 d-block display-30">TIME: 09:00 AM - 5:00 PM</span>
+                            <span class="font-weight-500 display-30 d-block">Sat - Sun: CLOSED</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <i class="ti-email header-icon text-primary"></i>
+                        <div class="media-body ml-3">
+                            <span class="font-weight-600 d-block display-30">EMAIL US</span>
+                            <span class="display-30 d-block">support@cosmoshealthsolutions.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <i class="ti-mobile header-icon text-primary"></i>
+                        <div class="media-body ml-3">
+                            <span class="font-weight-600 d-block display-30">CALL US</span>
+                            <span class="display-30 d-block">833-526-7667</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br />
+        <div class="col">
+            <div class="container">
+
+                <div class="float-right xs-width-100 text-center">
+                    <p class="font-weight-600 margin-5px-top xs-no-margin-top">© 2021 Cosmos Health Solutions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </header> -->
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/8f3fcbe0fc.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- <script src="login.js"></script>  -->
+    </script>
+</body>
+
+
+</html>
