@@ -142,3 +142,31 @@ a.butn:hover, a.butn:active, a.butn:focus {
 
 .butn:focus {
   color: #fff; }
+
+  /*==============================
+ *    Personal Information.html
+ *    ================================ */
+ .butnTransparent {
+  background: none;
+
+  color: #1e2022; }
+  .butnTransparent:hover {
+    color: #fff; }
+  .titleCenter{
+    text-align: center;
+    width: 100%;
+  }
+  .dob{
+    display: inline;
+    width: auto;
+    margin: .5%;
+  }
+
+      /*==============================
+ *    changePassword.html
+ *    ================================ */
+    .password-spec{
+      font-weight: 400;
+      font-size: 80%;
+      line-height: 0;
+    }
